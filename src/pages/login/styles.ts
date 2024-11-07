@@ -1,11 +1,6 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.CriarText = exports.EsqueciText = exports.SubtitleLogin = exports.TitleLogin = exports.Title = exports.Row = exports.Column = exports.Wrapper = exports.Container = void 0;
-const styled_components_1 = __importDefault(require("styled-components"));
-exports.Container = styled_components_1.default.main `
+import styled from 'styled-components';
+
+export const Container = styled.main`
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
@@ -15,21 +10,27 @@ exports.Container = styled_components_1.default.main `
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-`;
-exports.Wrapper = styled_components_1.default.div `
+`
+
+export const Wrapper = styled.div`
     max-width: 300px;
-`;
-exports.Column = styled_components_1.default.div `
+`
+
+export const Column = styled.div`
     flex: 1;
-`;
-exports.Row = styled_components_1.default.div `
+`
+
+export const Row = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-`;
-exports.Title = styled_components_1.default.h2 `
+`
+
+
+
+export const Title = styled.h2`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -39,24 +40,28 @@ exports.Title = styled_components_1.default.h2 `
     line-height: 44px;
 
     color: #FFFFFF;
-`;
-exports.TitleLogin = styled_components_1.default.p `
+`
+
+export const TitleLogin = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 8px;
-`;
-exports.SubtitleLogin = styled_components_1.default.p `
+`
+
+export const SubtitleLogin = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 35px;
-`;
-exports.EsqueciText = styled_components_1.default.p `
+`
+
+
+export const EsqueciText  = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -64,8 +69,9 @@ exports.EsqueciText = styled_components_1.default.p `
     line-height: 19px;
 
     color: #E5E044;
-`;
-exports.CriarText = styled_components_1.default.p `
+` 
+
+export const CriarText =  styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -73,4 +79,4 @@ exports.CriarText = styled_components_1.default.p `
     line-height: 19px;
 
     color: #23DD7A;
-`;
+`

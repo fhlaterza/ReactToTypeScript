@@ -1,6 +1,11 @@
-import styled from 'styled-components';
-
-export const Container = styled.main`
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TextContent = exports.TitleHighlight = exports.Title = exports.Container = void 0;
+const styled_components_1 = __importDefault(require("styled-components"));
+exports.Container = styled_components_1.default.main `
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
@@ -10,10 +15,8 @@ export const Container = styled.main`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-`
-
-
-export const Title = styled.h2`
+`;
+exports.Title = styled_components_1.default.h2 `
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -23,13 +26,11 @@ export const Title = styled.h2`
     line-height: 44px;
 
     color: #FFFFFF;
-`
-
-export const TitleHighlight = styled.span`
+`;
+exports.TitleHighlight = styled_components_1.default.span `
     color: #E4105D;;
-`
-
-export const TextContent = styled.p`
+`;
+exports.TextContent = styled_components_1.default.p `
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -40,4 +41,4 @@ export const TextContent = styled.p`
     margin-bottom: 20px;
 
     color: #FFFFFF;
-`
+`;

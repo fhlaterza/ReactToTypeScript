@@ -1,4 +1,6 @@
 import styled  from 'styled-components';
+import { ImageBackgroundProps } from './types';
+import { MenuRightProps } from '../Button/types';
 
 export const Container = styled.div`
    
@@ -48,7 +50,7 @@ export const Menu = styled.a`
     margin-right: 12px;
 `
 
-export const MenuRight = styled.a`
+export const MenuRight = styled.a<MenuRightProps>`
     font-family: 'Open Sans';
     font-style: normal;
     font-size: 12px;
@@ -58,14 +60,19 @@ export const MenuRight = styled.a`
     text-decoration: none;
 `
 
-export const UserPicture = styled.img`
+export const UserPicture = styled.div<ImageBackgroundProps>`
     width: 32px;
     height: 32px;
     border-radius: 22px;
     border: 3px solid #FFFFFF;
+    background-image: url(${(props) => props.src});
+    background-size: cover;
+    background-position: center;
 `
 
-export const Input = styled.input`
+export const Input = styled.input.attrs({
+    placeholder: 'Buscar...'
+})`
     background: transparent;
     flex: 1;
     border: 0;

@@ -1,6 +1,11 @@
-import styled from 'styled-components';
-
-export const Container = styled.main`
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Column = exports.TitleHighlight = exports.Title = exports.Container = void 0;
+const styled_components_1 = __importDefault(require("styled-components"));
+exports.Container = styled_components_1.default.main `
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
@@ -9,9 +14,8 @@ export const Container = styled.main`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-`
-
-export const Title = styled.h3`
+`;
+exports.Title = styled_components_1.default.h3 `
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -19,9 +23,8 @@ export const Title = styled.h3`
     line-height: 25px;
     color: #FFFFFF;
     margin-bottom: 24px;
-`
-
-export const TitleHighlight = styled.h3`
+`;
+exports.TitleHighlight = styled_components_1.default.h3 `
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -30,12 +33,9 @@ export const TitleHighlight = styled.h3`
     color: #FFFFFF70;
     margin-bottom: 24px;
 
-`
-
-export const Column = styled.div`
-    flex:${({flex}) => flex};
+`;
+exports.Column = styled_components_1.default.div `
+    flex:${({ flex }) => flex};
     padding-right: 24px;
 
-`
-
-
+`;
